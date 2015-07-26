@@ -3,7 +3,7 @@
 
 ## The game
 
-I created this game in 2006. [A iOS app is still avalaible](https://itunes.apple.com/fr/app/casse-tete-addictif-le-squaro/id342115573?mt=8)
+I created this game in 2006. [An iOS app is still avalaible](https://itunes.apple.com/fr/app/casse-tete-addictif-le-squaro/id342115573?mt=8)
 
 ## Install
 
