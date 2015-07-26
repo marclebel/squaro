@@ -1,12 +1,16 @@
-var React = require('react');
+import React from 'react';
 
-module.exports =  React.createClass({
+class Circle extends React.Component {
 
-    handleClick: function () {
-        this.props.handler(this);
-    },
+    constructor(props) {
+        super(props);
+    }
 
-    render: function() {
+    handleClick() {
+       this.props.handler(this);
+    }
+
+    render() {
         var divStyle = {
             position : 'absolute',
             backgroundColor : (this.props.value==0)?'white':'blue',
@@ -23,11 +27,13 @@ module.exports =  React.createClass({
 
         return (
             <div className = "circle" 
-                 onClick = {this.handleClick}
+                 onClick = {this.handleClick.bind(this)}
                  style={divStyle}
                  >
             </div>
-    );
-  }
+        );
+    }
 
-});
+}
+
+export default Circle;

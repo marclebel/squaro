@@ -1,16 +1,16 @@
-var React = require('react');
-var Square = require('./square');
-var Circle = require('./circle');
+import React from 'react';
+import Circle from './circle.jsx';
+import Square from './square.jsx';
 
-module.exports = React.createClass({
+class Grid extends React.Component {
 
-    getInitialState: function() {
-        return {    
-            userClicks : Array.apply(null, Array(this.props.data.length)).map(Number.prototype.valueOf,0)
-        };
-    },
+    constructor(props) {
+        super(props);
+        this.state = {userClicks : Array.apply(null, Array(props.data.length)).map(Number.prototype.valueOf,0)};
+    }
 
-    handleClick: function (childComponent) {
+
+    handleClick(childComponent) {
     
         var pUserClicks = this.state.userClicks;
         pUserClicks[childComponent.props.index] = 1 - childComponent.props.value ;
@@ -32,9 +32,9 @@ module.exports = React.createClass({
 
         this.setState({userClicks : pUserClicks});
         
-    },
+    }
 
-    getNumber: function(arr,i,j){
+    getNumber(arr,i,j){
 
         var size = Math.sqrt(arr.length);
         var i1 = i + j * size ; 
@@ -43,9 +43,9 @@ module.exports = React.createClass({
         var i4 =  (i + 1) +  (j + 1) * size ;
 
         return arr[i1] + arr[i2] + arr[i3] + arr[i4];
-    },
+    }
 
-    render: function() {
+    render() {
 
 
         var size = Math.sqrt(this.props.data.length);
@@ -80,7 +80,7 @@ module.exports = React.createClass({
                         var col = Math.floor( i / size ) ;
 
                         return (
-                            <Circle handler = {this.handleClick} 
+                            <Circle handler = {this.handleClick.bind(this)} 
                                     key = {i} 
                                     index = {i} 
                                     value = {value}
@@ -128,4 +128,6 @@ module.exports = React.createClass({
             </div>
     );
   }
-});
+}
+
+export default Grid;

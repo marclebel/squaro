@@ -1,8 +1,8 @@
-var React = require('react');
+import React from 'react';
 
-module.exports =  React.createClass({
+class Square extends React.Component {
 
-  render: function() {
+  render() {
 
     var borderSize = '2px';
     var borderStyle = borderSize + ' solid #333';
@@ -37,4 +37,6 @@ module.exports =  React.createClass({
     );
   }
 
-});
+}
+
+export default Square;

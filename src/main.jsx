@@ -1,5 +1,5 @@
-var React = require('react');
-var Grid = require('./grid');
+import React from 'react';
+import Grid from './grid.jsx';
 
 React.render(
     <div>
