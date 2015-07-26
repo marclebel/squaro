@@ -1,0 +1,8 @@
+{
+  "name": "squaro-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
+  }
+}
