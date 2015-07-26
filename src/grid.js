@@ -27,7 +27,7 @@ module.exports = React.createClass({
         console.log(this.props.data);
 
         if (gagne){
-             alert("bravo vous avez gagné !!!" );
+             alert("bravo vous avez gagné !!" );
         }
 
        
