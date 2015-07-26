@@ -13,7 +13,7 @@ browerify is required
 
 then to build app.js just run :
 
-      browserify -t reactify  src/*.js -o public/app.js
+      browserify -t babelify  src/*.jsx -o public/app.js
       
 ## Live Demo
       
