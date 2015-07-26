@@ -22,9 +22,7 @@ module.exports = React.createClass({
                 break;
             }
         };
-
-        console.log(pUserClicks);
-        console.log(this.props.data);
+        
 
         if (gagne){
              alert("bravo vous avez gagné !!" );
