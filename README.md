@@ -11,7 +11,7 @@ browerify is required
 
       npm install -g browserify
 
-then to build app.js just run :
+then to build bundle.js just run :
 
       browserify -t babelify  js/*.js -o js/bundle.js
       
