@@ -1,6 +1,6 @@
 import React from 'react';
-import Circle from './circle.jsx';
-import Square from './square.jsx';
+import Circle from './circle';
+import Square from './square';
 
 class Grid extends React.Component {
 
@@ -10,10 +10,10 @@ class Grid extends React.Component {
     }
 
 
-    handleClick(childComponent) {
+    handleCircleClick(cirle) {
     
         var pUserClicks = this.state.userClicks;
-        pUserClicks[childComponent.props.index] = 1 - childComponent.props.value ;
+        pUserClicks[cirle.props.index] = 1 - cirle.props.value ;
 
         var gagne = true;
         for (var i = this.props.data.length - 1; i >= 0; i--) {
@@ -80,7 +80,7 @@ class Grid extends React.Component {
                         var col = Math.floor( i / size ) ;
 
                         return (
-                            <Circle handler = {this.handleClick.bind(this)} 
+                            <Circle handler = {this.handleCircleClick.bind(this)} 
                                     key = {i} 
                                     index = {i} 
                                     value = {value}

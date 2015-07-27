@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from './grid.jsx';
+import Grid from './components/grid';
 
 React.render(
     <div>

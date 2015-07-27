@@ -6,7 +6,7 @@ class Circle extends React.Component {
         super(props);
     }
 
-    handleClick() {
+    circleClick() {
        this.props.handler(this);
     }
 
@@ -27,7 +27,7 @@ class Circle extends React.Component {
 
         return (
             <div className = "circle" 
-                 onClick = {this.handleClick.bind(this)}
+                 onClick = {this.circleClick.bind(this)}
                  style={divStyle}
                  >
             </div>
