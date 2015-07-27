@@ -1,12 +1,13 @@
 import React from 'react';
 import Grid from './components/grid';
 
+React.initializeTouchEvents(true);
 React.render(
     <div>
-        <h1>SquarO propulsé en React</h1>
+        <h1>SquarO</h1>
         <Grid 
             data={[0,1,1,1,0,1,0,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,0,0]} 
-            width="400" 
+            width="300" 
             />
     </div>,
     document.getElementById('app')
