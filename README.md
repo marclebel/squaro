@@ -13,7 +13,11 @@ browerify is required
 
 then to build bundle.js just run :
 
-      browserify -t babelify  js/*.js -o js/bundle.js
+      npm run build
+      
+A watch command is also avaivlable :
+
+      npm run watch
       
 ## Live Demo
       
