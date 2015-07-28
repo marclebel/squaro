@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from './components/grid';
 
-React.initializeTouchEvents(true);
+
 React.render(
     <div>
         <h1>SquarO</h1>

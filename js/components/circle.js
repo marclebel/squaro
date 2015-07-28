@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Circle extends React.Component {
 
     constructor(props) {
@@ -27,6 +28,7 @@ class Circle extends React.Component {
 
         return (
             <div className = "circle" 
+                 onTouchEnd = {this.circleClick.bind(this)}
                  onClick = {this.circleClick.bind(this)}
                  style={divStyle}
                  >
