@@ -11,7 +11,6 @@ var _componentsGrid = require('./components/grid');
 
 var _componentsGrid2 = _interopRequireDefault(_componentsGrid);
 
-_react2['default'].initializeTouchEvents(true);
 _react2['default'].render(_react2['default'].createElement(
     'div',
     null,
@@ -82,6 +81,7 @@ var Circle = (function (_React$Component) {
             };
 
             return _react2['default'].createElement('div', { className: "circle",
+                onTouchEnd: this.circleClick.bind(this),
                 onClick: this.circleClick.bind(this),
                 style: divStyle
             });
