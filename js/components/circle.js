@@ -1,7 +1,9 @@
 import React from 'react';
+import mixin from 'es6-react-mixins';
+import pure from '../mixin/pure';
 
 
-class Circle extends React.Component {
+class Circle extends  mixin(pure) {
 
     constructor(props) {
         super(props);
@@ -12,6 +14,7 @@ class Circle extends React.Component {
     }
 
     render() {
+        
         var divStyle = {
             position : 'absolute',
             backgroundColor : (this.props.value==0)?'white':'blue',

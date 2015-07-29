@@ -1,8 +1,11 @@
 import React from 'react';
+import mixin from 'es6-react-mixins';
+import pure from '../mixin/pure';
 
-class Square extends React.Component {
+class Square extends mixin(pure)  {
 
   render() {
+    
 
     var borderSize = '2px';
     var borderStyle = borderSize + ' solid #333';
