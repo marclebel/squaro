@@ -22,3 +22,7 @@ A watch command is also avaivlable :
 ## Live Demo
       
 See [live demo](http://marclebel.github.io/squaro/)
+
+## Native version
+
+A native version build on top on react native is also [alvailable](https://github.com/marclebel/squaro-react-native)
